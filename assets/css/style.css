@@ -1,0 +1,93 @@
+/* Reset Dasar */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Inter', Arial, sans-serif;
+    background-color: #f4f6f9; /* Warna abu-abu terang yang bersih */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Kotak Login Minimalis */
+.login-box {
+    background: #ffffff;
+    padding: 40px 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05); /* Shadow tipis biar elegan */
+    width: 350px;
+}
+
+.login-box h2 {
+    text-align: center;
+    margin-bottom: 8px;
+    color: #1e293b; /* Warna teks gelap natural */
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.login-box p {
+    text-align: center;
+    color: #64748b; /* Warna sub-teks abu-abu */
+    font-size: 14px;
+    margin-bottom: 24px;
+}
+
+/* Input Group */
+.input-group {
+    margin-bottom: 16px;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 6px;
+    color: #475569;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+/* Kolom Input */
+.input-group input {
+    width: 100%;
+    padding: 10px 14px;
+    border: 1px solid #cbd5e1; /* Border tipis halus */
+    border-radius: 6px;
+    font-size: 14px;
+    outline: none;
+    transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+/* Efek pas kolom input diklik */
+.input-group input:focus {
+    border-color: #3b82f6; /* Berubah jadi biru standar web modern */
+    box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
+}
+
+/* Tombol Login */
+.btn-login {
+    width: 100%;
+    padding: 12px;
+    background-color: #1e293b; /* Tombol warna gelap elegan */
+    border: none;
+    border-radius: 6px;
+    color: white;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    margin-top: 8px;
+}
+
+/* Efek pas tombol disentuh mouse */
+.btn-login:hover {
+    background-color: #334155;
+}
+
+.btn-login:active {
+    transform: scale(0.99);
+}
