@@ -1,7 +1,17 @@
-<?php  
+<?php
 
-if($_SERVER['REQUEST_METHOD'] === 'POST'){
-    
+require_once "database/function.php";
+
+if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+    $username = $_POST['username'];
+    $password = $_POST['password'];
+
+    $islogin = login($username, $password);
+    if ($islogin) {
+        echo "pasword benar";
+    } else {
+        echo "Tidak bisa login salah";
+    }
 }
 
 ?>
