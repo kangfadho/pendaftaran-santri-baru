@@ -1,0 +1,114 @@
+/* Reset Dasar */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Inter', Arial, sans-serif;
+    background-color: #f8fafc; /* Abu-abu terang bersih */
+    color: #1e293b;
+    padding: 40px 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    width: 100%;
+    max-width: 800px;
+}
+
+/* Header Dashboard */
+.dashboard-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 24px;
+}
+
+.dashboard-header h1 {
+    font-size: 24px;
+    font-weight: 700;
+    color: #0f172a;
+}
+
+.btn-logout {
+    padding: 8px 16px;
+    background-color: #ef4444;
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 600;
+    border-radius: 6px;
+    transition: background-color 0.2s;
+}
+
+.btn-logout:hover {
+    background-color: #dc2626;
+}
+
+/* Kartu Utama Biodata */
+.biodata-card {
+    background: #ffffff;
+    border-radius: 12px;
+    border: 1px solid #e2e8f0;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+    overflow: hidden;
+}
+
+/* Bagian Atas Kartu (Banner Mini/Nama) */
+.card-profile-header {
+    background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%);
+    padding: 30px;
+    color: white;
+}
+
+.card-profile-header h2 {
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 4px;
+}
+
+.card-profile-header p {
+    font-size: 14px;
+    color: #94a3b8;
+}
+
+/* Detail Baris Informasi */
+.biodata-content {
+    padding: 24px;
+}
+
+.info-row {
+    display: flex;
+    padding: 14px 0;
+    border-bottom: 1px solid #f1f5f9;
+    font-size: 15px;
+}
+
+.info-row:last-child {
+    border-bottom: none;
+}
+
+.info-label {
+    width: 30%;
+    font-weight: 600;
+    color: #64748b;
+}
+
+.info-value {
+    width: 70%;
+    color: #0f172a;
+}
+
+/* Responsive buat HP/Layar Kecil */
+@media (max-width: 600px) {
+    .info-row {
+        flex-direction: column;
+        gap: 4px;
+    }
+    .info-label, .info-value {
+        width: 100%;
+    }
+}
